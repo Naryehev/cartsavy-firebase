@@ -127,7 +127,7 @@ font-style: normal
 #info {
   background-color: ##fbf5f3;
   color: black;
-  padding-bottom: 150px;
+  padding-bottom: 1px;
 }
 
 body::-webkit-scrollbar {
@@ -150,8 +150,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 #signupbut {
-  background-color: #D06D6D;
-  color: black;
+  background-color: #EEEEEE;
+  color: white;
+  border-color: black;
+  z-index: 1;
 }
 
 #formholder {
@@ -172,13 +174,13 @@ body::-webkit-scrollbar-thumb {
 
 #descy {
   margin-top: 50px;
-  height:400px;
+  height:500px;
 }
 #jumbocover{
   width:100%;
   opacity:0.3;
   z-index: -1;
-
+  padding-bottom: 325px;
 }
 .center {
     position: absolute;
@@ -213,7 +215,7 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     font-size:19px;
     margin-top: -240px;
-    
+
 }
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -451,4 +453,20 @@ a, a:focus, a:hover {
   .masthead, .mastfoot, .cover-container {
     width: 100%;
   }
+}
+
+#priv{
+  margin-left: 200px;
+  margin-right: 200px;
+  text-align: left;
+}
+
+#privhead{
+  margin: 50px;
+  text-align: center;
+}
+
+#privtitle{
+  margin: 50px;
+  text-align: center;
 }
