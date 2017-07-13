@@ -7,13 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="src/favicon.png" sizes="16x16" />
   <script src="https://use.fontawesome.com/9b4daed836.js"></script>
-
+  <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lobster|Pacifico|Roboto+Slab|Nunito" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="css/cover.css" />
-  <script src="js/javascript.js">
-  </script>
 
 
 
@@ -38,38 +36,41 @@
         <li><a href="discover.html">Discover</a></li>
         <li><a href="team.html">Our Team</a></a>
         </li>
-        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a id ="logoutBtn" href="login.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+
       </ul>
     </div>
   </div>
-  </nav>
-     <div class="container">
-        <div class="well">
-          <p>*** UNDER CONSTRUCTION*** </p>
-          <div class="list-group row">
-            <ul class="col-md-4">
-              <li class="list-group-item">Account </li>
-              <li class="list-group-item">Prefrences</li>
-              <li class="list-group-item">Security</li>
-              <li class="list-group-item">\</li>
-              <li class="list-group-item">\</li>
-            </ul>
-            <div class="col-md-8">
-              <p>Text</p>
-              <h1>Title test.</h1>
-              <div id="avi-box">
-                <img src="src/avatar.svg" id="avi-pic" alt="Kiwi standing on oval" height="100px">
-              </div>
-            </div>
-          </div>
-          <div class="setingsBody">
-
-          </div>
+</nav>
+<div class="container">
+  <div class="well">
+    <p>*** UNDER CONSTRUCTION*** </p>
+    <div class="list-group row">
+      <ul class="col-md-4">
+        <li class="list-group-item">Account </li>
+        <li class="list-group-item"><a href="#">Prefrences</a></li>
+        <li class="list-group-item"><a href="#">Security</a></li>
+        <li class="list-group-item">Fridge</li>
+        <li class="list-group-item">\</li>
+      </ul>
+      <div class="col-md-8">
+        <p>Text</p>
+        <h1>Title test.</h1>
+        <div id="avi-box">
+          <img src="src/avatar.svg" id="avi-pic" alt="Kiwi standing on oval" height="100px">
+        </div>
       </div>
+    </div>
+    <div class="setingsBody">
 
-      </div>
-     </div>
+    </div>
+  </div>
+
+</div>
+</div>
+<script src="js/Accountfirebase.js"></script>
 
 
 </body>
+
 </html>

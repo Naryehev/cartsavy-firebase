@@ -8,7 +8,7 @@
     storageBucket: "cart-savy.appspot.com",
     messagingSenderId: "511411877096"
   };
-  firebase.initializeApp(config);
+  firebase.initializeApp(config,"Secondary");
 
 
 
@@ -19,43 +19,22 @@
   const logoutBtn = document.getElementById('logoutBtn');
   const passwordSU = document.getElementById('passwordsu')
   const emailSU = document.getElementById('emailsu')
-
-  // add clicklistener
-  loginBtn.addEventListener('click', e => {
-
-    const email = txtEmail.value;
-    const password = txtPassword.value
-    const auth = firebase.auth();
-
-    const promise = auth.signInWithEmailAndPassword(email, password);
-    promise.catch(e=> console.log(e.message));
+  const user = firebase.auth().currentUser;
 
 
-  });
-  //signup click event
-  signupBtn.addEventListener('click', e =>{
-    const email = emailSU.value;
-    const password = passwordSU.value
-    const auth = firebase.auth();
-
-    const promise = auth.createUserWithEmailAndPassword(email, password);
-    promise.catch(e=> console.log(e.message));
   });
   // logout click listener
-  // logoutBtn.addEventListener('click', e => {
-  //   firebase.auth().signOut();
-  // });
+  logoutBtn.addEventListener('click', e => {
+    firebase.auth().signOut();
+  });
   //  login listener
   firebase.auth().onAuthStateChanged(firebaseUser => {
       if(firebaseUser){
         console.log(firebaseUser);
-        window.location = '../account.html'
       }else{
         console.log('not logged in');
         logoutBtn.classlIst.add('hide');
 
       }
-    });
 
-
-}());
+});
