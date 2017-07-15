@@ -16,7 +16,7 @@ a, a:focus, a:hover {
   color: #333;
   text-shadow: none;
   /* Prevent inheritance from `body` */
-  background-color: #fff;
+  background-color: #e85f5c;
   border: 1px solid #fff;
 }
 
@@ -173,14 +173,20 @@ body::-webkit-scrollbar-thumb {
 }
 
 #descy {
-  margin-top: 50px;
-  height:500px;
+
+}
+#signupBtn{
+  border-color: #993a38;
+}
+#password{
+  margin-top: 10px;
+  margin-bottom:20px;
 }
 #jumbocover{
   width:100%;
   opacity:0.3;
   z-index: -1;
-  padding-bottom: 325px;
+  margin-bottom: 325px;
 }
 .center {
     position: absolute;

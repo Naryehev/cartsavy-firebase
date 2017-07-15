@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="src/favicon.png" sizes="16x16" />
   <script src="https://use.fontawesome.com/9b4daed836.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lobster|Pacifico|Roboto+Slab|Nunito" rel="stylesheet">
@@ -34,8 +35,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="plan.html">Meal Planning</a></li>
         <li><a href="discover.html">Discover</a></li>
-        <li><a href="team.html">Our Team</a></a>
-        </li>
+        <li><a href="team.html">Our Team</a></a></li>
         <li><a id ="logoutBtn" href="login.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
 
       </ul>
@@ -47,15 +47,13 @@
     <p>*** UNDER CONSTRUCTION*** </p>
     <div class="list-group row">
       <ul class="col-md-4">
-        <li class="list-group-item">Account </li>
-        <li class="list-group-item"><a href="#">Prefrences</a></li>
-        <li class="list-group-item"><a href="#">Security</a></li>
-        <li class="list-group-item">Fridge</li>
+        <li class="list-group-item"><a href="account/preferences.html">Prefrences</a></li>
+        <li class="list-group-item"><a href="account/security.html">Security</a></li>
+        <li class="list-group-item"><a href="account/fridge.html">Fridge</a></li>
         <li class="list-group-item">\</li>
       </ul>
       <div class="col-md-8">
-        <p>Text</p>
-        <h1>Title test.</h1>
+        <h1 id="emailSec">Title test.</h1>
         <div id="avi-box">
           <img src="src/avatar.svg" id="avi-pic" alt="Kiwi standing on oval" height="100px">
         </div>
@@ -68,6 +66,8 @@
 
 </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/Accountfirebase.js"></script>
 
 

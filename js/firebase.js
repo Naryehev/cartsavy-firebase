@@ -8,9 +8,8 @@
     storageBucket: "cart-savy.appspot.com",
     messagingSenderId: "511411877096"
   };
-  firebase.initializeApp(config);
 
-
+  var FbApp = firebase.initializeApp(config);
 
   const txtEmail = document.getElementById('email');
   const txtPassword = document.getElementById('password');
@@ -41,7 +40,7 @@
     const promise = auth.createUserWithEmailAndPassword(email, password);
     promise.catch(e=> console.log(e.message));
   });
-  // logout click listener
+  // // logout click listener
   // logoutBtn.addEventListener('click', e => {
   //   firebase.auth().signOut();
   // });
@@ -52,7 +51,6 @@
         window.location = '../account.html'
       }else{
         console.log('not logged in');
-        logoutBtn.classlIst.add('hide');
 
       }
     });

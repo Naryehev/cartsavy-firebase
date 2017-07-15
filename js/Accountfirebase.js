@@ -1,40 +1,44 @@
 // Initialize Firebase
-(function(){
-  const config = {
-    apiKey: "AIzaSyDQoSITxgVlt3DPJKp6ESovi5dzIABuyvE",
-    authDomain: "cart-savy.firebaseapp.com",
-    databaseURL: "https://cart-savy.firebaseio.com",
-    projectId: "cart-savy",
-    storageBucket: "cart-savy.appspot.com",
-    messagingSenderId: "511411877096"
-  };
-  firebase.initializeApp(config,"Secondary");
+$(function() {
+    console.log("ready!");
+    firebase.initializeApp({
+      apiKey: "AIzaSyDQoSITxgVlt3DPJKp6ESovi5dzIABuyvE",
+      authDomain: "cart-savy.firebaseapp.com",
+      databaseURL: "https://cart-savy.firebaseio.com",
+      projectId: "cart-savy",
+      storageBucket: "cart-savy.appspot.com",
+      messagingSenderId: "511411877096"
+    });
+
+    const logoutBtn = document.getElementById("logoutBtn");
+    var user = firebase.auth().currentUser;
+    var name, email, photoUrl, uid, emailVerified;
+    const emailTxtPut = document.getElementById("emailSec")
+    // logout click listener
+    firebase.auth().onAuthStateChanged(user => {
+      if (user) {
+        name = user.displayName;
+        email = user.email;
+        photoUrl = user.photoURL;
+        emailVerified = user.emailVerified;
+        uid = user.uid;
+        console.log(email);
+        $('#emailSec').text("Hi, "+email);
 
 
 
-  const txtEmail = document.getElementById('email');
-  const txtPassword = document.getElementById('password');
-  const loginBtn = document.getElementById('loginBtn');
-  const signupBtn = document.getElementById('signupbtn');
-  const logoutBtn = document.getElementById('logoutBtn');
-  const passwordSU = document.getElementById('passwordsu')
-  const emailSU = document.getElementById('emailsu')
-  const user = firebase.auth().currentUser;
+      } else {
+        console.log("not logged in");
+        window.location = "/../login.html"
+      }
+
+    });
 
 
-  });
-  // logout click listener
-  logoutBtn.addEventListener('click', e => {
+  logoutBtn.addEventListener('click', user => {
     firebase.auth().signOut();
   });
-  //  login listener
-  firebase.auth().onAuthStateChanged(firebaseUser => {
-      if(firebaseUser){
-        console.log(firebaseUser);
-      }else{
-        console.log('not logged in');
-        logoutBtn.classlIst.add('hide');
 
-      }
+
 
 });
