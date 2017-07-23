@@ -65,10 +65,13 @@ font-style: normal
   font-size:36px;
 }
 #navlogocart{
-  color:#b5b5b5;
+  color:#98d09f;
 }
 #navlogosavy{
-  color:#3b8fce;
+  color:#345283;
+}
+p{
+  margin:5px;
 }
 
 
@@ -88,6 +91,7 @@ font-style: normal
   display: table-cell;
   vertical-align: top;
 }
+
 
 .cover-container {
   margin-right: auto;
@@ -148,7 +152,16 @@ body::-webkit-scrollbar-thumb {
 #foodpic {
   height: 1750px;
 }
-
+.pref{
+  margin:5px;
+}
+#btnDelete{
+    /*font-size: 8pt;
+   font-family: tahoma;
+   position:absolute;
+   top:0;
+   right:0;*/
+}
 #signupbut {
   background-color: #EEEEEE;
   color: white;
@@ -175,8 +188,26 @@ body::-webkit-scrollbar-thumb {
 #descy {
 
 }
+table, th, td, tr {
+    border: 1px solid black;
+    text-align: center;
+}
+#imgHolder{
+  display:block;
+
+}
+.infoclass{
+  text-align: center;
+}
 #signupBtn{
   border-color: #993a38;
+}
+#demotb{
+  width:80%;
+}
+#prodimageurl{
+  width: 200px;
+
 }
 #password{
   margin-top: 10px;
@@ -198,7 +229,10 @@ body::-webkit-scrollbar-thumb {
 #android {
   width: 150px;
 }
-
+#pricess{
+  float: none;
+    margin: 0 auto;
+}
 #logo {
   display: inline;
   height: 50px;
@@ -211,6 +245,12 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 20px;
   height: 35px;
   width: 35px
+}
+#create input{
+  margin:5px;
+}
+#udpateBtn{
+    margin-left: 45%;
 }
 .thumbnail{
   background-color: inherit;
@@ -261,9 +301,11 @@ body::-webkit-scrollbar-thumb {
 
 hr {
   width: 90%;
-  margin: 30px;
+  margin: 20px;
 }
-
+ul{
+  padding: 0;
+}
 #svg {
   margin: 20px;
   color: black;
@@ -475,4 +517,120 @@ a, a:focus, a:hover {
 #privtitle{
   margin: 50px;
   text-align: center;
+}
+* {
+    box-sizing: border-box;
+}
+
+/* Create three columns of equal width */
+.columns {
+    margin: 0 auto;
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+}
+
+/* Style the list */
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: auto;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+
+}
+
+/* Add shadows on hover */
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+/* Pricing header */
+.price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+}
+
+/* List items */
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Grey list item */
+.price .grey {
+    background-color: #eee;
+    font-size: 20px;
+}
+
+/* The "Sign Up" button */
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Change the width of the three columns to 100%
+(to stack horizontally on small screens) */
+@media only screen and (max-width: 600px) {
+    .columns {
+        width: 100%;
+    }
+}
+#parent {
+  text-align:center;
+}
+.social {
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 82%;
+}
+.social h4 {
+  color: #666;
+  font-weight: normal;
+  margin: 5px 0 20px;
+  text-align: center;
+}
+.social ul{
+  display: block;
+}
+.social ul li{
+  list-style: none;
+  width: 31.33%;
+  float: left;
+  margin: 0 1%;
+}
+.social ul li a{
+  display: inline-block;
+  font-size: 24px;
+  text-decoration: none;
+  color: #fff;
+  padding: 6px;
+  display: block;
+  text-align: center;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.social ul li a:hover{opacity: .8;}
+.social ul li a.facebook{
+   background: #3a589a;
+}
+.social ul li a.twitter {
+  background: #4099ff;
+  }
+ .social ul li a.google-plus {
+  background: #e9544f;
 }

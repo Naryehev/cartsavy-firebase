@@ -20,7 +20,7 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="index.html" id="navlogotext"> <span id="navlogocart">  Cart </span> <span id="navlogosavy">Savy </a>
+      <a class="navbar-brand" href="../index.html" id="navlogotext"> <span id="navlogocart">  Cart </span> <span id="navlogosavy">Savy </a>
       <img src="../src/logo.svg" alt="Cart Savy" height="35px" id="logo" />
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
@@ -34,9 +34,9 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="plan.html">Meal Planning</a></li>
-        <li><a href="discover.html">Discover</a></li>
+        <li><a href="discover.html">Pricing</a></li>
         <li><a href="team.html">Our Team</a></a></li>
-        <li><a id ="logoutBtn" href="login.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+        <li><a id ="logoutBtn" href="../login.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
 
       </ul>
     </div>
@@ -46,13 +46,24 @@
   <div class="well">
     <div class="list-group row">
       <ul class="col-md-4">
-        <li class="list-group-item">Account </li>
-        <li class="list-group-item"><a href="#">Security</a></li>
-        <li class="list-group-item"><a href="account/fridge.html">Fridge</a></li>
-        <li class="list-group-item">\</li>
+        <li class="list-group-item"<a href="account.html">Account </a></li>
+        <li class="list-group-item"><a href="billing.html">Billing</a></li>
+        <li class="list-group-item"><a href="fridge.html">Fridge</a></li>
       </ul>
       <div class="col-md-8">
-        <h1 id="emailSec">Title test.</h1>
+
+        <label>Update your info...</label>
+        <label for="firstname" class="sr-only"></label>
+        <input id="firstname" class="form-control input-group-lg reg_name pref" type="text" autocapitalize="off" name="firstname" title="Enter first name" placeholder="First name">
+        <label for="lastname" class="sr-only"></label>
+        <input id="lastname" class="form-control input-group-lg reg_name pref" type="text" autocapitalize="off" name="lastname" title="Enter last name" placeholder="Last name">
+        <label for="email" class="sr-only"></label>
+        <input id="email" class="form-control input-group-lg reg_name pref" type="text" autocapitalize="off" name="email" title="Enter email" placeholder="Email">
+        <label for="password" class="sr-only"></label>
+        <input id="password" class="form-control input-group-lg reg_name pref" type="text" autocapitalize="off" name="password" title="Enter password" placeholder="Password">
+
+        <button id="udpateBtn" class="btn btn-default">Update</button>
+
 
       </div>
 </div>
